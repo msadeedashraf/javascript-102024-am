@@ -1,5 +1,3 @@
-# javascript-102024-am
-
-My fist test to update the repo
-
-My second line
+### To Create a repo on git
+[Git Repo](https://github.com/msadeedashraf?tab=repositories)
+![Create Repo press New ](/assets/create-repo.png)
