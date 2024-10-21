@@ -12,5 +12,8 @@
 
 ### How to Download a git repo using Git Clone
 
+#### First change the dir to download on the local machine 
+![press New](/assets/cd.png)
+
 #### Git Clone [url]
 ![press New](/assets/git-clone.png)
