@@ -24,3 +24,10 @@
 
 #### where to get the git repo url
 ![press New](/assets/clone-url.png)
+
+
+### How to initialize the  Git
+
+>git config --global user.name "youname"
+
+>git config --global user.email "email@gmail.com"
