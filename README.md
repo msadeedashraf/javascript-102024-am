@@ -12,6 +12,9 @@
 
 ### How to Download a git repo using Git Clone
 
+#### Pick up the cmd ---go to windows start and type cmd (you can pin it to the taskbar)
+![press New](/assets/start-cmd.png)
+
 #### First change the dir to download on the local machine 
 ##### cd [PATH] ---you can copy paste the path from the file explorer
 ![press New](/assets/cd.png)
