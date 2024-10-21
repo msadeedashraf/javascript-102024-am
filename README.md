@@ -18,3 +18,6 @@
 
 #### Git Clone [url]
 ![press New](/assets/git-clone.png)
+
+#### where to get the git repo url
+![press New](/assets/clone-url.png)
