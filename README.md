@@ -10,6 +10,11 @@
 ![press New](/assets/git-repo-creation.png)
 
 
+
+#### Download link for git
+[Git download](https://git-scm.com/downloads/win)
+
+
 ### How to Download a git repo using Git Clone
 
 #### Pick up the cmd ---go to windows start and type cmd (you can pin it to the taskbar)
