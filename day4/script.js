@@ -20,3 +20,10 @@ function MyGreetingMsg()
 
 }
 
+
+
+function ChangeDate()
+{
+    document.getElementById("mydate").innerHTML = Date()
+
+}
