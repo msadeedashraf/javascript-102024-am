@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulb on and off</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h2>What Can JavaScript Do?</h2>
@@ -25,7 +26,7 @@
 <br>
 <br>
 <hr>
-<h2>Change the font for the test in the paragraph</h2>
+<h2 id="title">Change the font for the test in the paragraph</h2>
 <br><br>
 <p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit mollitia assumenda repellat doloribus animi aspernatur sunt rem beatae ipsa ipsum?</p>
 
@@ -34,6 +35,26 @@
 <button onclick="document.getElementById('demo').style.fontSize='35px'">Click to Change the font</button>
 
 <button onclick="document.getElementById('demo').style.fontSize='16px'">Reverse font</button>
+<br>
+<br>
+<button id="btnred"  
+onclick="document.getElementById('title').style.color='red'"
+></button>
+
+<button id="btnblue"  
+onclick="document.getElementById('title').style.color='blue'"
+></button>
+
+<button  id="btngreen"  
+onclick="document.getElementById('title').style.color='green'"
+></button>
+
+<button  id="btnyellow"  
+onclick="document.getElementById('title').style.color='yellow'"
+></button>
+
+
+
 
 
 </body>

@@ -1,0 +1,32 @@
+#btnred{
+    border: none; 
+    border-radius: 8px;
+    height: 30px;
+    width: 70px;
+    background: red; 
+}
+
+
+#btnblue{
+    border: none; 
+    border-radius: 8px;
+    height: 30px;
+    width: 70px;
+    background: blue; 
+}
+
+#btngreen{
+    border: none; 
+    border-radius: 8px;
+    height: 30px;
+    width: 70px;
+    background: green; 
+}
+
+#btnyellow  {
+    border: none; 
+    border-radius: 8px;
+    height: 30px;
+    width: 70px;
+    background: yellow  ; 
+}
