@@ -10,33 +10,36 @@
    
 <h2 id="title">Change the font for the test in the paragraph </h2>
 <br>
-<h3>Using Functions</h3>
+<h3>Using Functions and DRY</h3>
 <br>
 <p id="demo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit mollitia assumenda repellat doloribus animi aspernatur sunt rem beatae ipsa ipsum?</p>
 
 <br>
 
-<button onclick="increaseFont()">Click to Change the font</button>
+<button onclick="changeFontSize('35px')">Click to Change the font</button>
 
-<button onclick="decreaseFont()">Reverse font</button>
+<button onclick="changeFontSize('16px')">Reverse font</button>
 <br>
 <br>
-<button id="btnred"  onclick="redColor()"></button>
+<button id="btnred"  onclick="changeElementColor('btnred')"></button>
 
 <button id="btnblue"  
-onclick="blueColor()"
+onclick="changeElementColor('btnblue')"
 ></button>
 
 <button  id="btngreen"  
-onclick="greenColor()"
+onclick="changeElementColor('btngreen')"
 ></button>
 
 <button  id="btnyellow"  
-onclick="lightgreyColor()"
+onclick="changeElementColor('btnyellow')"
 ></button>
 
 
-<script src="script.js"></script>
+<p id="addnumbers"></p>
+
+
+<script src="script_dry.js"></script>
 
 
 </body>
