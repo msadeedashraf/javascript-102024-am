@@ -11,4 +11,4 @@ Change the text in a paragraph at the load and also using a button.
 6. Age Calculator ![Age Calculator](/assets/projects/age-calculator.png)
 7. Temp Calculator ![Temp Calculator](/assets/projects/temp-convertor.png)
 
-8. Loan Calculator ![Loan Calculator](/assets/projects/loan-convertor.png)
+8. Loan Calculator ![Loan Calculator](/assets/projects/loan-calculator.png)
