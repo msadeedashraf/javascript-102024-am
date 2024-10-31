@@ -12,3 +12,7 @@ Change the text in a paragraph at the load and also using a button.
 7. Temp Calculator ![Temp Calculator](/assets/projects/temp-convertor.png)
 
 8. Loan Calculator ![Loan Calculator](/assets/projects/loan-calculator.png)
+
+9. Refactor the function.html to use the switch statement.
+10. Creating Analog Clock. [Clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=2s&ab_channel=WebDevSimplified)
+11. Creating a calculator. [calculator](https://www.youtube.com/watch?v=j59qQ7YWLxw&t=2s&pp=ygUxY3JlYXRlIGEgY2FsY3VsYXRvciB1c2luZyBodG1sIGNzcyBhbmQgamF2YXNjcmlwdA%3D%3D)

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Functions</h1>
+    
+    <h2 id="demo"></h2>
+    <h2 id="demo1"></h2>
+    <h2 id="demo2"></h2>
+    <h2 id="demo3"></h2>
+
+    <script>
+
+document.getElementById('demo').innerHTML = "Add : "+  add(20,36);
+document.getElementById('demo1').innerHTML = "Multiply : "+  multiply(20,36);
+document.getElementById('demo2').innerHTML = "Subtract: "+  subtract(20,36);
+document.getElementById('demo3').innerHTML = "Divide: "+  divide(20,36);
+
+
+
+function add(num1 , num2)
+{
+    
+    return num1+num2;
+}
+
+function subtract(num1 , num2)
+{
+    
+    return num1-num2;
+}
+
+function multiply(num1 , num2)
+{
+    
+    return num1*num2;
+}
+
+function divide(num1 , num2)
+{
+    
+    return num1/num2;
+}
+
+
+
+
+
+    /*        let result = 5 + 6 + parseInt("09") 
+            console.log(result);
+            */
+
+
+    </script>
+</body>
+</html>
