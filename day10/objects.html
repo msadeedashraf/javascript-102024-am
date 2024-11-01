@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+
+    <h1>Arrays</h1>
+    <p id="array_demo"></p>
+    <h1>Dates</h1>
+    <p id="demo"></p>
+
+    <script>
+
+let students = new Array();
+
+students= ["Aimee", "Sam"];
+
+let cars = [];
+
+document.getElementById('array_demo').innerHTML = students[0];
+
+let myDOB = new Date();
+document.getElementById('demo').innerHTML = myDOB.getFullYear();
+    </script>
+</body>
+</html>
