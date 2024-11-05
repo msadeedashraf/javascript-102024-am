@@ -14,6 +14,6 @@ Change the text in a paragraph at the load and also using a button.
 8. Loan Calculator ![Loan Calculator](/assets/projects/loan-calculator.png)
 
 9. Refactor the function.html to use the switch statement [switch](https://www.w3schools.com/js/js_switch.asp).
-10. Refactor BankAccount Version 0 ![V0](/assets/projects/Balance-Manager-V0.png) to Version 1 ![V1](/assets/projects/Balance-Manager-V1.png) 
+10. Refactor BankAccount [Version 0](https://github.com/msadeedashraf/javascript-102024-am/tree/main/day12/BankAccount) ![V0](/assets/projects/Balance-Manager-V0.png) to Version 1 ![V1](/assets/projects/Balance-Manager-V1.png) 
 11. Creating Analog Clock. [Clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=2s&ab_channel=WebDevSimplified)
 12. Creating a calculator. [calculator](https://www.youtube.com/watch?v=j59qQ7YWLxw&t=2s&pp=ygUxY3JlYXRlIGEgY2FsY3VsYXRvciB1c2luZyBodG1sIGNzcyBhbmQgamF2YXNjcmlwdA%3D%3D)
