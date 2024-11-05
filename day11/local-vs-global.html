@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local vs Global</title>
+</head>
+<body>
+    <h1>Local vs Global Variables</h1>
+
+
+
+
+
+<script>
+
+
+
+    
+{
+   let  firstName = "Sadeed";
+
+    console.log(firstName);
+
+    message(firstName);
+
+    inputNumber1 = 50;
+    inputNumber2 = 50;
+
+
+    add(inputNumber1, inputNumber2);
+    //console.log(result);
+}
+
+
+
+function message(myName) 
+{
+
+    return console.log("Welcome to " + myName);
+
+
+}
+
+function add(num1, num2)
+{
+let result = num1 + num2;
+return console.log(result);
+
+}
+
+//console.log(students.length)
+const students = ["Sam", "Aimee", "Kennedy", "Arash", "Trystan"]
+
+for (let x = 0 ; x<students.length ; x++)
+{
+    
+    
+
+
+
+    message(students[x]);
+
+    
+
+}
+
+//console.log(x);
+
+
+
+
+</script>
+
+    
+</body>
+</html>

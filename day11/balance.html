@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balance</title>
+  </head>
+  <body>
+    <h1>Update the Balance</h1>
+    <script>
+      let balance = 1000;
+      console.log(balance);
+
+      withdraw(100);
+      console.log(balance);
+
+      const purchases = [50, 30, 60, 20];
+
+      for (let x = 0; x < purchases.length; x++) {
+        withdraw(purchases[x]);
+        console.log(balance);
+      }
+
+      deposit(1000);
+      console.log(balance);
+
+      const incomes = [500, 300, 60, 20];
+
+      for (let x = 0; x < incomes.length; x++) {
+        deposit(incomes[x]);
+        console.log(balance);
+      }
+
+      function withdraw(amount) {
+        let updatedBalance = balance - amount;
+        return (balance = updatedBalance);
+      }
+
+      function deposit(amount) {
+        return (balance += amount);
+      }
+    </script>
+  </body>
+</html>
