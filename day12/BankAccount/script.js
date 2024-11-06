@@ -7,7 +7,6 @@ function makeDeposit() {
   document.getElementById("balance").innerHTML = myBalance;
 
   addTransaction("Credit", amount);
-
 }
 
 function makeWithdrawal() {
@@ -17,15 +16,12 @@ function makeWithdrawal() {
   addTransaction("Debit", amount);
 }
 
-function addTransaction(type, amount)
-{
-    const transactionList = document.getElementById("transaction");
-    const transactionItem = document.createElement("li");
-    //transactionItem.textContent = type + ": $ " +amount + " | Balance: $" +myBalance;  
-    //With String Interpolation 
-    transactionItem.textContent = `${type} : $ ${amount} | Balance: $ ${myBalance}`;
+function addTransaction(type, amount) {
+  const transactionList = document.getElementById("transaction");
+  const transactionItem = document.createElement("li");
+  //transactionItem.textContent = type + ": $ " +amount + " | Balance: $" +myBalance;
+  //With String Interpolation
+  transactionItem.textContent = `${type} : $ ${amount} | Balance: $ ${myBalance}`;
 
-    transactionList.appendChild(transactionItem);
-
-
+  transactionList.appendChild(transactionItem);
 }
