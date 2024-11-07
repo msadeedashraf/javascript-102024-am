@@ -33,7 +33,7 @@
         placeholder="Enter custom description"
       />
       <label for="amount">Amount</label>
-      <input type="number" id="amount" />
+      <input type="number" id="amount" value="0" />
       <button onclick="makeTransaction()">Submit</button>
     </div>
     <div id="statement">
@@ -46,19 +46,15 @@
             <th>Amount</th>
             <th>Balance</th>
           </tr>
-          <tr>
-            <td>2024-12-21</td>
-            <td>Salary</td>
-            <td class="credit" >$100</td>
-            <td>$1100</td>
-          </tr>
-          <tr>
-            <td>2024-12-21</td>
-            <td>Entertainment</td>
-            <td class="debit" >$50</td>
-            <td>$1050</td>
-          </tr>
+          
+         
         </thead>
+
+        <tbody id="transactions">
+          
+
+        </tbody>
+        
       </table>
     </div>
 
