@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+</head>
+<body>
+    <h1>Javascript Strings</h1>
+
+    <!-- <h3>Good Morning Sadeed </h3>
+    <ol>
+        <li>Sam</li>
+        <li>Aimee</li>
+    </ol> -->
+
+    <div id="demo">
+
+        
+    
+        <script>
+    document.getElementById("demo").innerHTML = createMYHTML();
+
+function createMYHTML()
+{
+    //let students = ["Sam", "Aimee", "Kennedy", "Arash", "Trystan"];
+    let students = [
+    "Safar",
+    "lidya",
+    "Fowsia",
+    "Hussain",
+    "Iyo",
+    "Alan",
+    "CJ",
+    "Charline",
+    "Suzane",
+    "Amber",
+    "Salah",
+  ];
+
+    let myTeacher =  "Sadeed";
+
+    let myHTML = ` <h3>Good Morning ${myTeacher} </h3> <ol>`;
+
+
+
+
+    for(a=0; a<students.length; a++)
+    {
+        myHTML += ` <li>${students[a]}</li>`
+    }
+        
+    myHTML+"</ol>";
+
+
+    return myHTML;
+}
+
+
+        </script>
+</body>
+</html>
