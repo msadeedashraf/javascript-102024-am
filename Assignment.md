@@ -17,4 +17,4 @@ Change the text in a paragraph at the load and also using a button.
 10. Refactor BankAccount [Version 0](https://github.com/msadeedashraf/javascript-102024-am/tree/main/day12/BankAccount) ![V0](/assets/projects/Balance-Manager-V0.png) to Version 1 ![V1](/assets/projects/Balance-Manager-V1.png) 
 11. Creating Analog Clock. [Clock](https://www.youtube.com/watch?v=Ki0XXrlKlHY&t=2s&ab_channel=WebDevSimplified)
 12. Creating a calculator. [calculator](https://www.youtube.com/watch?v=j59qQ7YWLxw&t=2s&pp=ygUxY3JlYXRlIGEgY2FsY3VsYXRvciB1c2luZyBodG1sIGNzcyBhbmQgamF2YXNjcmlwdA%3D%3D)
-13. Reading assignment
+
