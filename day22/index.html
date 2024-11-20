@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bottom Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           
+            color: rgb(225, 223, 223);
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer div {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+           
+            margin: 0 35px;
+            border-radius: 5px;
+            
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .footer div:hover {
+            background-color: #fefcfc17;
+            
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+
+    
+    <div >
+        <div class="background"  id="background"></div>
+        <div class="timedisplay"  id="timedisplay"></div>
+        
+        <div class="datedisplay"  id="datedisplay"></div>
+    </div>
+    <div class="footer">
+        <div>
+            <h5>Weather</h5>
+        </div>
+        <div>
+            Section 2
+
+        </div>
+        <div>Section 3</div>
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
