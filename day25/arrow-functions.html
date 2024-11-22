@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+
+    <h1>Arrow Functions</h1>
+<p id="demo1"></p>
+<p id="demo"></p>
+
+
+    <script >
+
+
+//https://www.w3schools.com/js/js_arrow_function.asp
+
+
+//Arrow Function
+let add = (num1, num2) => num1+num2;
+
+let multiply = (num1, num2) => num1*num2;
+
+//document.getElementById("demo").innerHTML = add(20,30);
+document.getElementById("demo").innerHTML = multiply(5,30);
+
+
+/*
+function add(num1, num2)
+{
+    return num1 + num2;
+}
+*/
+
+/*
+hello = function() {
+  return "Hello World!";
+}
+*/
+
+/*
+hello = () => {
+  return "Hello Sadeed!";
+}
+*/
+
+hello = () => "Welcome to CBC!"
+document.getElementById("demo1").innerHTML =hello();
+
+
+
+
+    </script>
+    
+</body>
+</html>
