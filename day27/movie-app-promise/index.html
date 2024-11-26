@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header_logo">Movie</div>
+        <div class="header_actions">
+          <form onsubmit="search(event)" id="header_form">
+            <div class="header_form-icon">
+              <input
+                type="search"
+                class="header_form-input"
+                placeholder="Search, Press Enter to Submit"
+              />
+              <svg class="icon" width="22px" height="22px">
+                <use href="#icon-search" />
+              </svg>
+            </div>
+          </form>
+          <img id="img_icon" width="32px" height="32px" src="https://static.tvmaze.com/uploads/images/medium_portrait/8/21945.jpg" alt="">
+          
+        </div>
+      </header>
+
+      <main id="main">
+        <section>
+          <article class="movie">
+            <div class="movie_img">
+              <img src="https://static.tvmaze.com/uploads/images/medium_portrait/481/1202650.jpg" alt="" id="img_src" />
+            </div>
+            <div class="movie_info">
+              <header><h1 class="movie_title">Spider-Man</h1></header>
+              <div class="movie_desc">
+                Spider-Man (1994) tells the story of a 19-year-old Peter Parker
+                in his first year at Empire State University, and his alter-ego
+                Spider-Man. The show features Spider-Man's classic villains,
+                including the Kingpin, the Green Goblin, the Lizard, the
+                Scorpion, Doctor Octopus, Mysterio, the Rhino, the Shocker, The
+                Vulture and the Chameleon, as well as more recent villains such
+                as Venom, Carnage and the Hobgoblin.
+              </div>
+              <div class="movie_details">
+                <h2>Details</h2>
+                <ul class="flex">
+                  <li>Premiered: <span id="movie_date">1995-03-04</span></li>
+                  <li>Rating: <span id="movie_rating">8</span></li>
+                  <li>Runtime: <span id="movie_runtime">30</span></li>
+                  <li>Status: <span id="movie_status">Ended</span></li>
+                </ul>
+              </div>
+              <a href="" class="btn">Watch Movie</a>
+            </div>
+          </article>
+
+          <div id="episodes_list">
+            <h3 class="episodes_title">Episodes</h3>
+            <ol class="episodes" id="episodes">
+              
+
+            </ol>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
