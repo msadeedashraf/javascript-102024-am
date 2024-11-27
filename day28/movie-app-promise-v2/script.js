@@ -87,27 +87,37 @@ movie_status.textContent = data.status;
 }
 
 
-const create_episodes_UI = (episodes_data) =>
+const create_episodes_UI = (episode_data) =>
 {
+  console.log(episode_data);
+  const episodes_list = document.querySelector("#episodes");
+  const episodes_title = document.querySelector(".episodes_title");
+  //console.log(episodes_title);
 
-//console.log(episodes_data[0].name);
-//console.log(episodes_data[0].url);
-//console.log(episodes_data[0].image.original);
+  episodes_title.textContent = "";
+  episodes_list.innerHTML = "";
 
+  episodes_title.textContent = "Episodes";
 
+  episode_data.forEach((episode) => {
+    let li = document.createElement("li");
+    const link = document.createElement("a");
+    const img = document.createElement("img");
 
+    if (episode.image == null) {
+      img.src =
+        "https://static.tvmaze.com/uploads/images/original_untouched/260/651247.jpg";
+    } else {
+      img.src = episode.image.original;
+    }
 
-let myEpisodesHTML = ``;
+    link.appendChild(img);
+    link.title = episode.name;
+    link.href = episode.url;
 
-for (let i = 0 ; i <episodes_data.length ; i++)
-{
-myEpisodesHTML += `<li><a title="${episodes_data[i].name}" href="${episodes_data[i].url}"><img src="${episodes_data[i].image?.original ? episodes_data[i].image.original : "images/deafult_epi_image.jpg"  }"/></a></li>`;
-}
-
-document.getElementById("episodes").innerHTML = myEpisodesHTML ;
-
-
-
+    li.appendChild(link);
+    episodes_list.appendChild(li);
+  });
 }
 
 
