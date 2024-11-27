@@ -14,8 +14,6 @@ fetch(`https://api.tvmaze.com/singlesearch/shows?q=${value}&embed=episodes`)
     create_header_UI(data);
     //create_episodes_UI(data);
 
-  
-  
 })
 
 

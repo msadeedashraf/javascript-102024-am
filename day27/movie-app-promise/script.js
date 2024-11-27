@@ -1,15 +1,27 @@
-
-
-
-
-
 const get_movies = (value = "superman") => {
   return new Promise ((resolve, reject)=>{
     fetch(`https://api.tvmaze.com/singlesearch/shows?q=${value}&embed=episodes`)
     .then((response)=> response.json())
     .then((data)=>{
       console.log(data);
-      resolve(data);
+
+      if (data._embedded.episodes.length > 0)
+      {
+        const episodes_data = data._embedded.episodes.slice(0,4);
+        console.log(episodes_data);
+
+        create_header_UI(data);
+        create_episodes_UI(episodes_data);
+        resolve(data);
+      }
+      else
+      {
+        create_header_UI(data)
+        document.getElementById("episodes").innerHTML = `<p>No Episode Data Found for your selection</p>`;
+        resolve(data);
+      }
+      
+      
     })
     .catch(
       (error)=>{
@@ -19,20 +31,24 @@ const get_movies = (value = "superman") => {
   });
 };
 
+get_movies("spiderman")
 
 
-
-
-
-get_movies("mission");
-
-
-
-/*
-function create_header_UI(data)
-{
+const search = (event)=>{
+  event.preventDefault();// Stops the form from submitting
+  const movie_name = document.querySelector(".header_form-input").value;
+  get_movies(movie_name)
+       .then ((data) => {
+        console.log("Movie data fetched successfully:", data);
+       })
+       .catch((error) => {
+        console.error("Error fetching movie data:", error);
+       });
 }
-*/
+
+
+
+
 const create_header_UI = (data) => {
 
 const movie_img = document.querySelector("#img_src")
@@ -66,13 +82,19 @@ movie_status.textContent = data.status;
 
 
 
-//Episode Code start here
-console.log(data._embedded.episodes.slice(0,4));
 
-const episodes_data = data._embedded.episodes.slice(0,4);
+
+}
+
+
+const create_episodes_UI = (episodes_data) =>
+{
+
 //console.log(episodes_data[0].name);
 //console.log(episodes_data[0].url);
 //console.log(episodes_data[0].image.original);
+
+
 
 
 let myEpisodesHTML = ``;
@@ -81,22 +103,11 @@ for (let i = 0 ; i <episodes_data.length ; i++)
 {
   //episode = episodes_data[i];
 
-myEpisodesHTML += `<li><a title="${episodes_data[i].name}" href="${episodes_data[i].url}"><img src="${episodes_data[i].image.original}"/></a></li>`;
+myEpisodesHTML += `<li><a title="${episodes_data[i].name}" href="${episodes_data[i].url}"><img src="${episodes_data[i].image?.original ? episodes_data[i].image.original : "images/deafult_epi_image.jpg"  }"/></a></li>`;
 }
 
 
 document.getElementById("episodes").innerHTML = myEpisodesHTML ;
-
-
-}
-/*
-function create_episodes_UI(episodes_data)
-{
-}
-*/
-
-const create_episodes_UI = (data) =>
-{
 
 
 
